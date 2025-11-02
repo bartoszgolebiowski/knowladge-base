@@ -179,8 +179,13 @@ Zrobiłem to za pomocą dynamicznego HTML i JavaScript, który to pobierał graf
 - **Krok 5 (Indeks FAISS):** Wzbogacanie dokumentów metadanymi za pomocą LLM i indeksowanie umożliwia wyszukiwanie semantyczne.
 - **Krok 6 (Hybrydowe API):** Łączenie BM25 i FAISS w API FastAPI daje najlepsze z obu światów – precyzję słów kluczowych i głębię znaczenia.
 
-Bawiłem się świetnie, budując ten system od podstaw. Można powiedzieć, że stworzyłem coś na kształt **infretrieval retrieval**, czyli **R** w bardzo popularnych rozwiązaniach typu RAG (Retrieval-Augmented Generation). 
+### Refleksje Końcowe
 
-To tylko utrwala mnie w przekonaniu, że naiwne aplikacje typu RAG to nie tylko embeddingi, ale również BM25 i inne klasyczne metody wyszukiwania informacji, ba nawet bez embeddingów da się zbudować całkiem użyteczny system.
+#### Bezpieczeństwo i Prywatność Danych
+Można zbudować proste systemy wyszukiwania hybrydowego i grafy wiedzy przy użyciu dostępnych narzędzi i modeli open-source, bez konieczności wysyłania danych do dostawców usług LLM typu OpenAI czy Anthropic. Jest to szczególnie ważne w kontekście prywatności i bezpieczeństwa danych.
 
+#### Przemyślenia nad RAG
+Chociaż ten eksperyment to nie aplikacja typu RAG, to moje przemyślenia w tym temacie utwierdzają mnie w przekonaniu, że aplikacje typu RAG to nie tylko embeddingi, ale również BM25 i inne klasyczne metody wyszukiwania informacji, ba nawet bez embeddingów da się zbudować całkiem użyteczny system.
 
+#### Refleksje Osobiste
+Bawiłem się świetnie, budując ten system od podstaw. Można powiedzieć, że stworzyłem coś na kształt **infretrieval retrieval**, czyli **R** w bardzo popularnych rozwiązaniach typu RAG (Retrieval-Augmented Generation).
