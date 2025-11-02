@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Knowledge Base Navigator</title>
+    <script src="https://cdn.jsdelivr.net/npm/markdown-it@13.0.1/dist/markdown-it.min.js"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      .tag {
+        display: inline-block;
+        background: #007bff;
+        color: white;
+        padding: 5px 10px;
+        margin: 2px;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      .tag:hover {
+        background: #0056b3;
+      }
+      .document-link {
+        cursor: pointer;
+        color: #007bff;
+        text-decoration: underline;
+      }
+      .document-link:hover {
+        color: #0056b3;
+      }
+      .back-button {
+        margin-bottom: 20px;
+        padding: 10px;
+        background: #f0f0f0;
+        cursor: pointer;
+      }
+      #content {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="content">
+      <h1>Knowledge Base Navigator</h1>
+      <div id="search-section" style="margin-bottom: 20px">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Wprowadź zapytanie do wyszukiwania..."
+          style="width: 300px; padding: 8px"
+        />
+        <button
+          onclick="performSearch()"
+          style="padding: 8px 16px; margin-left: 10px"
+        >
+          Szukaj
+        </button>
+        <button
+          onclick="clearSearch()"
+          style="padding: 8px 16px; margin-left: 10px"
+        >
+          Wyczyść
+        </button>
+      </div>
+      <div id="main-view">
+        <div style="display: flex; gap: 20px">
+          <div>
+            <h2>All Documents</h2>
+            <ul id="document-list"></ul>
+          </div>
+          <div>
+            <h2>All Entities</h2>
+            <ul id="entity-list"></ul>
+          </div>
+        </div>
+      </div>
+      <div id="document-view" style="display: none">
+        <button class="back-button" onclick="showMainView()">
+          Back to Documents
+        </button>
+        <div id="document-content"></div>
+      </div>
+      <div id="entity-view" style="display: none">
+        <button class="back-button" onclick="showMainView()">
+          Back to Documents
+        </button>
+        <div id="entity-content"></div>
+      </div>
+    </div>
+
+    <script>
+      const md = window.markdownit();
+      let graphData;
+      let entityDocWeights = {}; // entity -> {doc: weight}
+      const uuidPattern = / \b[0-9a-f]{32}\b/g; // Regex do usunięcia UUID
+
+      // Załaduj dane grafu
+      fetch("weighted_hybrid_graph.json")
+        .then((response) => response.json())
+        .then((data) => {
+          graphData = data;
+          buildEntityDocWeights();
+          showDocumentList();
+          showEntityList();
+        })
+        .catch((error) => console.error("Error loading graph data:", error));
+
+      function buildEntityDocWeights() {
+        graphData.edges.forEach((edge) => {
+          if (edge.type === "entity-document") {
+            if (!entityDocWeights[edge.source]) {
+              entityDocWeights[edge.source] = {};
+            }
+            entityDocWeights[edge.source][edge.target] = edge.weight;
+          }
+        });
+      }
+
+      function showMainView() {
+        document.getElementById("main-view").style.display = "block";
+        document.getElementById("document-view").style.display = "none";
+        document.getElementById("entity-view").style.display = "none";
+      }
+
+      function showDocumentList() {
+        const docs = graphData.nodes
+          .filter((node) => node.type === "document")
+          .map((node) => node.id);
+        const list = document.getElementById("document-list");
+        list.innerHTML = docs
+          .map(
+            (doc) =>
+              `<li><span class="document-link" onclick="showDocument('${doc}')">${doc.replace(
+                uuidPattern,
+                ""
+              )}</span></li>`
+          )
+          .join("");
+        document.getElementById("main-view").style.display = "block";
+        document.getElementById("document-view").style.display = "none";
+        document.getElementById("entity-view").style.display = "none";
+      }
+
+      function showEntityList() {
+        const entities = graphData.nodes
+          .filter((node) => node.type !== "document")
+          .map((node) => node.id);
+        const list = document.getElementById("entity-list");
+        list.innerHTML = entities
+          .map(
+            (ent) =>
+              `<li><span class="tag" onclick="showEntity('${ent}')">${ent}</span></li>`
+          )
+          .join("");
+      }
+
+      function showDocumentFromPath(filepath) {
+        // Wyciągnij nazwę pliku z filepath (obsługuj zarówno / jak i \)
+        const parts = filepath.split(/[/\\]/);
+        const docId = parts[parts.length - 1];
+        console.log(docId)
+        showDocument(docId);
+      }
+
+      function showDocument(docId) {
+        // Załaduj zawartość dokumentu
+        fetch(`knowladge/sa-prof/${docId}`)
+          .then((response) => response.text())
+          .then((content) => {
+            // Znajdź powiązane entities z wagami
+            const connectedEntities = graphData.edges
+              .filter(
+                (edge) =>
+                  edge.type === "entity-document" && edge.target === docId
+              )
+              .map((edge) => ({ entity: edge.source, weight: edge.weight }))
+              .sort((a, b) => b.weight - a.weight); // Sortuj po weight malejąco
+
+            // Znajdź powiązane dokumenty przez wspólne entities z wagami
+            const relatedDocsMap = {};
+            connectedEntities.forEach(({ entity, weight }) => {
+              graphData.edges
+                .filter(
+                  (edge) =>
+                    edge.type === "entity-document" &&
+                    edge.source === entity &&
+                    edge.target !== docId
+                )
+                .forEach((edge) => {
+                  if (!relatedDocsMap[edge.target]) {
+                    relatedDocsMap[edge.target] = 0;
+                  }
+                  relatedDocsMap[edge.target] += edge.weight; // Suma wag wspólnych encji
+                });
+            });
+            const relatedDocsArray = Object.entries(relatedDocsMap)
+              .map(([doc, weight]) => ({ doc, weight }))
+              .sort((a, b) => b.weight - a.weight); // Sortuj po weight malejąco
+            const contentDiv = document.getElementById("document-content");
+            contentDiv.innerHTML = `
+                        <h2>${docId.replace(uuidPattern, "")}</h2>
+                        <h3>Tags:</h3>
+                        <div>${connectedEntities
+                          .map(
+                            ({ entity, weight }) =>
+                              `<span class="tag" onclick="showEntity('${entity}')">${entity} (weight: ${weight})</span>`
+                          )
+                          .join("")}</div>
+                        <h3>Content:</h3>
+                        <div>${md.render(content)}</div>
+                        <h3>Related Documents:</h3>
+                        <ul>${relatedDocsArray
+                          .map(
+                            ({ doc, weight }) =>
+                              `<li><span class="document-link" onclick="showDocument('${doc}')">${doc.replace(
+                                uuidPattern,
+                                ""
+                              )}</span> (weight: ${weight})</li>`
+                          )
+                          .join("")}</ul>
+                    `;
+
+            document.getElementById("main-view").style.display = "none";
+            document.getElementById("document-view").style.display = "block";
+            document.getElementById("entity-view").style.display = "none";
+          })
+          .catch((error) => {
+            document.getElementById(
+              "document-content"
+            ).innerHTML = `<p>Error loading document: ${error}</p>`;
+          });
+      }
+
+      function showEntity(entityId) {
+        // Znajdź dokumenty powiązane z encją, posortowane po weight malejąco
+        const docsWithWeights = entityDocWeights[entityId] || {};
+        const sortedDocs = Object.entries(docsWithWeights)
+          .sort((a, b) => b[1] - a[1]) // Sortuj po weight malejąco
+          .map(([doc, weight]) => ({ doc, weight }));
+
+        const contentDiv = document.getElementById("entity-content");
+        contentDiv.innerHTML = `
+                <h2>Entity: ${entityId}</h2>
+                <h3>Related Documents (sorted by weight):</h3>
+                <ul>${sortedDocs
+                  .map(
+                    (item) =>
+                      `<li><span class="document-link" onclick="showDocument('${
+                        item.doc
+                      }')">${item.doc.replace(
+                        uuidPattern,
+                        ""
+                      )}</span> (weight: ${item.weight})</li>`
+                  )
+                  .join("")}</ul>
+            `;
+
+        document.getElementById("main-view").style.display = "none";
+        document.getElementById("document-view").style.display = "none";
+        document.getElementById("entity-view").style.display = "block";
+      }
+
+      async function performSearch() {
+        const query = document.getElementById("search-input").value.trim();
+        if (!query) {
+          alert("Wprowadź zapytanie!");
+          return;
+        }
+
+        try {
+          const response = await fetch("http://localhost:8000/search", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ query: query, k: 10 }),
+          });
+          const results = await response.json();
+
+          // Filtruj dokumenty na podstawie wyników
+          filterDocuments(results, query);
+        } catch (error) {
+          console.error("Błąd wyszukiwania:", error);
+          alert(
+            "Błąd podczas wyszukiwania. Upewnij się, że API działa na localhost:8000."
+          );
+        }
+      }
+
+      function filterDocuments(searchResults, query) {
+        // Nie filtruj listy "All Documents" - zostaw wszystkie widoczne
+        // Zamiast tego, wyświetl wyniki wyszukiwania osobno
+
+        // Wyświetl wyniki wyszukiwania
+        const resultsDiv = document.createElement("div");
+        resultsDiv.innerHTML = `<h3>Wyniki wyszukiwania dla: "${query}"</h3><ul>${searchResults
+          .map(
+            (r) =>
+              `<li><span class="document-link" onclick="showDocumentFromPath('${
+                r.filename
+              }')">${r.document_title}</span> (score: ${r.score.toFixed(
+                2
+              )})</li>`
+          )
+          .join("")}</ul>`;
+        document.getElementById("main-view").prepend(resultsDiv);
+      }
+
+      function clearSearch() {
+        document.getElementById("search-input").value = "";
+        // Lista dokumentów już jest cała, więc nie trzeba przywracać
+        // Usuń wyniki wyszukiwania
+        const resultsDiv = document.querySelector("#main-view > div");
+        if (resultsDiv) resultsDiv.remove();
+      }
+    </script>
+  </body>
+</html>

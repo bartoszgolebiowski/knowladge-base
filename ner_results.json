@@ -1,0 +1,1112 @@
+{
+    "1 1e0e8a1b4dd7802097c0ff7a8a81ecc3.md": [
+        "appstream",
+        "cloudtrail",
+        "cname",
+        "dns",
+        "ebs",
+        "ec2",
+        "efs",
+        "network firewall",
+        "nfs",
+        "regions",
+        "route",
+        "smb",
+        "vdi",
+        "vpc",
+        "windows",
+        "workspaces"
+    ],
+    "2 1e1e8a1b4dd7803a9e40c1ef4af4ee94.md": [
+        "api",
+        "cloudfront",
+        "dns",
+        "ec2",
+        "iam",
+        "route",
+        "sts"
+    ],
+    "7rs 1dae8a1b4dd78030867ded0f443d462b.md": [
+        "cms",
+        "vmware"
+    ],
+    "Access Points 1cee8a1b4dd780debd33de4a07a94d68.md": [
+        "dns",
+        "iam",
+        "s3 access points",
+        "vpc"
+    ],
+    "ACM 1cbe8a1b4dd78093bd80d3523dc675f8.md": [
+        "alb",
+        "clb",
+        "cloudfront",
+        "cpu",
+        "dns",
+        "ec2",
+        "https",
+        "nlb",
+        "ssl"
+    ],
+    "Alexa for business, Alexa, Connect 1dde8a1b4dd780729359f3f42861c2ea.md": [
+        "alexa",
+        "crm"
+    ],
+    "Amazon Inspector 1cfe8a1b4dd78002ab11d5f078fa2fb7.md": [
+        "ec2",
+        "eventbridge"
+    ],
+    "API Gateway 1d2e8a1b4dd7805089ebdf07fbbe65b6.md": [
+        "api",
+        "cloudfront",
+        "cloudwatch logs",
+        "eni",
+        "iam",
+        "ips",
+        "kinesis data firehose",
+        "sqs",
+        "step functions",
+        "ttl",
+        "vpc"
+    ],
+    "API Gateway 2 1d2e8a1b4dd78058887ae135e9675666.md": [
+        "api",
+        "iam",
+        "vpc",
+        "vpc endpoint",
+        "websocket"
+    ],
+    "App runner 1d1e8a1b4dd780bd9674c5c9146410e0.md": [
+        "api",
+        "cross-region replication",
+        "docker",
+        "route"
+    ],
+    "App stream 1dee8a1b4dd78066bc25e19da20bce71.md": [
+        "appstream",
+        "cpu",
+        "ram",
+        "vdi",
+        "workspaces"
+    ],
+    "App Sync 1d2e8a1b4dd780ed9870d37c5c8929bb.md": [
+        "api",
+        "cloudwatch metrics",
+        "lambda",
+        "mqtt"
+    ],
+    "Application Discovery Services 1dae8a1b4dd780849018fb4155ccd990.md": [
+        "athena",
+        "cpu",
+        "csv",
+        "database migration service",
+        "ebs",
+        "sql server",
+        "vmware"
+    ],
+    "Athena 1d8e8a1b4dd780de99eecdab85cf47cd.md": [
+        "athena",
+        "cloudtrail",
+        "csv",
+        "quicksight",
+        "sql"
+    ],
+    "Aurora 1d5e8a1b4dd7803e99aee58764f0259b.md": [
+        "availability zones",
+        "cloudwatch logs",
+        "rds"
+    ],
+    "Aurora 2 1d5e8a1b4dd78004b1bbee99e3384b8a.md": [
+        "iam",
+        "rds",
+        "rpo",
+        "rto",
+        "sql"
+    ],
+    "Auto Scaling Strategies 1d0e8a1b4dd780d1b8aae1b3e68b8df7.md": [
+        "alb",
+        "cname",
+        "dns",
+        "ttl"
+    ],
+    "AWS Directory Services 1c9e8a1b4dd780cebe68ff74c06ebca4.md": [
+        "availability zones",
+        "ec2",
+        "mfa",
+        "microsoft",
+        "microsoft active directory",
+        "quicksight",
+        "rds",
+        "sql server",
+        "vpc",
+        "workspaces"
+    ],
+    "Backup 1dae8a1b4dd780b6a4fccbb3ae973dc8.md": [
+        "ami",
+        "ebs",
+        "ec2",
+        "iam",
+        "vpc"
+    ],
+    "Basic VPC 1dbe8a1b4dd78047909ffd5f42e7a6c3.md": [
+        "cloudwatch logs",
+        "elastic network interface",
+        "eni",
+        "nat",
+        "ssh",
+        "systems",
+        "vpc"
+    ],
+    "Batch 1d7e8a1b4dd7800aa196f53e25295b4c.md": [
+        "cpu",
+        "docker",
+        "ebs",
+        "ec2",
+        "ecs",
+        "eventbridge",
+        "fargate",
+        "iam",
+        "spot instances",
+        "step functions",
+        "vpc"
+    ],
+    "Beanstalk 1d8e8a1b4dd780a3bc71f7011064c9c1.md": [
+        "alb",
+        "cpu",
+        "dns",
+        "ec2",
+        "elb",
+        "rds",
+        "sqs"
+    ],
+    "Budget & Cost Explorer 1d9e8a1b4dd78031844be79098df415a.md": [
+        "ec2",
+        "elasticache",
+        "iam",
+        "rds",
+        "sns"
+    ],
+    "Caching Extreme Rates 1d5e8a1b4dd780d69b7acf44f9b3af69.md": [
+        "alb",
+        "api",
+        "cloudfront",
+        "dns",
+        "ebs",
+        "ec2",
+        "efs",
+        "elasticache",
+        "elasticsearch service",
+        "iops",
+        "kms",
+        "route",
+        "simple queue service",
+        "sns",
+        "sqs",
+        "sse"
+    ],
+    "CDK 1d9e8a1b4dd78059bb22fa5f3b5ea067.md": [
+        "cli",
+        "cloudformation",
+        "ecs",
+        "eks",
+        "javascript"
+    ],
+    "ClientVPN 1dce8a1b4dd780169289fe1101a1f1a4.md": [
+        "asn",
+        "customer gateways",
+        "direct connect",
+        "ipsec",
+        "los angeles",
+        "miami",
+        "nat",
+        "vgw",
+        "vpc"
+    ],
+    "Cloud Map 1d9e8a1b4dd780659b52c0116170c76e.md": [
+        "api",
+        "dns"
+    ],
+    "CloudFormation 1d9e8a1b4dd780128218ce27a94c5daa.md": [
+        "api",
+        "cloudformation",
+        "rds",
+        "sam"
+    ],
+    "CloudFront 1d5e8a1b4dd780c89482d75239342376.md": [
+        "alb",
+        "cloudfront",
+        "ec2",
+        "https",
+        "los angeles",
+        "nlb",
+        "route",
+        "ttl",
+        "vpc",
+        "websocket"
+    ],
+    "CloudFront 2 1d5e8a1b4dd780a18e40d9e9f0ecf294.md": [
+        "cloudfront",
+        "iam",
+        "ttl"
+    ],
+    "CloudGuru 1dde8a1b4dd780ac8fd9d0cb89916f11.md": [
+        "codecommit",
+        "cpu"
+    ],
+    "CloudHSM 1cee8a1b4dd780719af4f53a081661f3.md": [
+        "api",
+        "availability zones",
+        "cloudtrail",
+        "cloudwatch",
+        "cmk",
+        "iam",
+        "kms",
+        "sse",
+        "vpc"
+    ],
+    "CloudTrail 1cae8a1b4dd780939d5beb9b2d3f72cb.md": [
+        "api",
+        "athena",
+        "cli",
+        "cloudtrail",
+        "cloudwatch logs",
+        "ec2",
+        "getobject",
+        "iam",
+        "putobject"
+    ],
+    "CloudTrail SA 1cae8a1b4dd78032ab21f0cf3cd00532.md": [
+        "api",
+        "cloudtrail",
+        "cloudwatch",
+        "cloudwatch logs",
+        "glacier",
+        "sns",
+        "sse"
+    ],
+    "CloudWatch 1d8e8a1b4dd7807594deebea4bf877d8.md": [
+        "api",
+        "cloudwatch",
+        "cloudwatch metrics",
+        "cpu",
+        "eventbridge",
+        "kinesis",
+        "sms",
+        "step functions"
+    ],
+    "CloudWatch logs 1d8e8a1b4dd780298575d8408c49a2af.md": [
+        "api",
+        "cloudwatch",
+        "cloudwatch logs",
+        "cmk",
+        "dns",
+        "ec2",
+        "elasticsearch service",
+        "kcl",
+        "kinesis data",
+        "kinesis data stream",
+        "kinesis data streams",
+        "kms",
+        "lambda",
+        "opensearch service",
+        "sse"
+    ],
+    "CodeDeploy 1d8e8a1b4dd780b7812dca80dddf15f2.md": [
+        "alb",
+        "auto scaling groups",
+        "codedeploy",
+        "ec2",
+        "ecs",
+        "lambda",
+        "sam"
+    ],
+    "Config 1cfe8a1b4dd7803fa561d60f99490ee9.md": [
+        "alb",
+        "api",
+        "cloudtrail",
+        "ebs",
+        "eventbridge",
+        "sns",
+        "ssh"
+    ],
+    "Control Tower 1cae8a1b4dd78016aa59d927eac8f611.md": [
+        "ebs",
+        "lambda",
+        "mfa",
+        "microsoft",
+        "sns"
+    ],
+    "Cost Allocation Tags 1d9e8a1b4dd780409955d71f5c9b8182.md": [
+        "csv"
+    ],
+    "Cost Optimizer 1d9e8a1b4dd780bd8aaee1844b14acb7.md": [
+        "cloudwatch",
+        "cloudwatch metrics",
+        "cpu",
+        "ec2",
+        "ram"
+    ],
+    "Data Engineering 1d7e8a1b4dd78095b14ced49ddf31c06.md": [
+        "kinesis data"
+    ],
+    "Data Exchange 1d4e8a1b4dd780959d84f536d0607fb1.md": [
+        "redshift",
+        "sagemaker"
+    ],
+    "DataSync 1d4e8a1b4dd7808994a5e953b43d4a76.md": [
+        "efs",
+        "glacier",
+        "nfs",
+        "smb"
+    ],
+    "DDoS Protection 1cfe8a1b4dd78065afd5e318f311bd1a.md": [
+        "alb",
+        "cloudfront",
+        "cpu",
+        "dns",
+        "elb",
+        "javascript",
+        "sql",
+        "tcp",
+        "udp"
+    ],
+    "Direct Connection 1dce8a1b4dd780ab8043d1e92cd72251.md": [
+        "alb",
+        "direct connect",
+        "ips",
+        "ipsec",
+        "rds",
+        "vgw",
+        "vpc"
+    ],
+    "Disaster Recovery 1dae8a1b4dd7808ba7f5d637c9baef7b.md": [
+        "crr",
+        "direct connect",
+        "dns",
+        "elasticache",
+        "elb",
+        "glacier",
+        "rds",
+        "rpo",
+        "rto"
+    ],
+    "DocumentDB 1d8e8a1b4dd7800caf17db59861a4a2d.md": [
+        "availability zones",
+        "nosql"
+    ],
+    "Dynamodb 1d5e8a1b4dd780c49277e3299c2f2b15.md": [
+        "cloudtrail",
+        "elasticache",
+        "iam",
+        "kinesis",
+        "kinesis data analytics",
+        "kinesis data streams",
+        "kms",
+        "opensearch",
+        "rto",
+        "ttl",
+        "vpc"
+    ],
+    "EC2 1d0e8a1b4dd780abbb55f341529d4485.md": [
+        "cli",
+        "cloudwatch",
+        "cpu",
+        "ec2",
+        "hadoop",
+        "iops",
+        "nosql"
+    ],
+    "EC2 Image Builder 1dee8a1b4dd780d4a248d0bbf69d0efb.md": [
+        "ami",
+        "codecommit",
+        "codepipeline"
+    ],
+    "EC2 instance connect 1cfe8a1b4dd780649fccd395517659df.md": [
+        "api",
+        "cli",
+        "ec2",
+        "ssh",
+        "tcp"
+    ],
+    "ECR 1d0e8a1b4dd78060a0b0c4f7bcee170f.md": [
+        "ami",
+        "auto scaling groups",
+        "cloudformation",
+        "docker",
+        "ec2",
+        "ecs",
+        "eks",
+        "eventbridge",
+        "fargate",
+        "iam",
+        "kubernetes"
+    ],
+    "ECS 1d0e8a1b4dd780ada7e0ecefc8c7fa0f.md": [
+        "alb",
+        "api",
+        "cpu",
+        "docker",
+        "ec2",
+        "ecs",
+        "eks",
+        "elastic network interface",
+        "eni",
+        "fargate",
+        "iam",
+        "kubernetes",
+        "nlb",
+        "ram",
+        "vpc"
+    ],
+    "EFS 1d4e8a1b4dd78037b42aeba235676afc.md": [
+        "ami",
+        "availability zones",
+        "cms",
+        "dns",
+        "ebs",
+        "ec2",
+        "efs",
+        "iam",
+        "kms",
+        "linux",
+        "nfs",
+        "rpo",
+        "rto"
+    ],
+    "ElasticCache 1d5e8a1b4dd7802d9b76ebf27961ee82.md": [
+        "elasticache"
+    ],
+    "EMR 1d8e8a1b4dd78068aef7cf9fcc0cac6d.md": [
+        "cloudwatch",
+        "ebs",
+        "ec2",
+        "hadoop",
+        "spot instances",
+        "vpc"
+    ],
+    "EventBridge 1d8e8a1b4dd7804eaeeecb4f97873c92.md": [
+        "codepipeline",
+        "eventbridge",
+        "iam",
+        "kinesis data streams",
+        "organization",
+        "sns",
+        "sqs"
+    ],
+    "Firewall Manager 1cfe8a1b4dd78066b4aed5ddbd159d18.md": [
+        "alb",
+        "clb",
+        "cloudfront",
+        "dns",
+        "ec2",
+        "eni",
+        "network firewall",
+        "nlb",
+        "organization",
+        "route",
+        "vpc"
+    ],
+    "FSx 1d4e8a1b4dd780589a05f86f0897cdf2.md": [
+        "appstream",
+        "cms",
+        "direct connect",
+        "ec2",
+        "ecs",
+        "eks",
+        "iops",
+        "linux",
+        "microsoft active directory",
+        "nfs",
+        "rds",
+        "smb",
+        "windows",
+        "workspaces"
+    ],
+    "Global Accelerator 1d3e8a1b4dd7800f9c3cd4b11a7fc5d0.md": [
+        "cloudfront",
+        "dns",
+        "ips",
+        "tcp",
+        "udp"
+    ],
+    "Glue 1d8e8a1b4dd7804bb441d477942fd93d.md": [
+        "athena",
+        "redshift"
+    ],
+    "GuardDuty 1cfe8a1b4dd780f5bc89f27d85c259b6.md": [
+        "api",
+        "dns",
+        "ec2",
+        "eventbridge",
+        "getobject",
+        "organization",
+        "sns"
+    ],
+    "IAM 1c8e8a1b4dd780ab8359f0f5dbaef9c8.md": [
+        "iam"
+    ],
+    "IAM Access Analyzer 1c8e8a1b4dd7800f8d18c16d9fc30aab.md": [
+        "api",
+        "cloudtrail",
+        "iam",
+        "ips",
+        "kms",
+        "sqs"
+    ],
+    "IAM Advanced Conditions 1cfe8a1b4dd7806f8fd5f418cf73213c.md": [
+        "api",
+        "ec2",
+        "getobject",
+        "iam",
+        "mfa",
+        "organization",
+        "putobject",
+        "rds"
+    ],
+    "IAM Identity Center 1cae8a1b4dd78002a9bcf1bb33f08574.md": [
+        "iam",
+        "organization",
+        "windows"
+    ],
+    "Intro 1c8e8a1b4dd780f2b12ee1fa0701899a.md": [
+        "codedeploy",
+        "iam",
+        "lambda",
+        "sns",
+        "sqs",
+        "sts"
+    ],
+    "IoT Core 1dee8a1b4dd7806b9c36c67169c9fbab.md": [
+        "iot",
+        "kinesis data",
+        "kinesis data firehose",
+        "lambda",
+        "mqtt",
+        "opensearch",
+        "sagemaker"
+    ],
+    "Kinesis Data Firehose 1d7e8a1b4dd78037919fc01f38249da8.md": [
+        "cloudwatch",
+        "csv",
+        "iot",
+        "kcl",
+        "kinesis data",
+        "kinesis data firehose",
+        "kinesis data streams",
+        "opensearch",
+        "opensearch service",
+        "redshift"
+    ],
+    "Kinesis Data Stream 1d7e8a1b4dd780fe8249cc24702920b3.md": [
+        "iot",
+        "kcl",
+        "kinesis data stream",
+        "kinesis data streams"
+    ],
+    "Kinesis Video Stream 1dde8a1b4dd780779a8ad1f5c8d22c61.md": [
+        "kcl",
+        "kinesis data",
+        "kinesis data analytics",
+        "kinesis data stream"
+    ],
+    "KMS 1cbe8a1b4dd78038b17cc9509a076454.md": [
+        "api",
+        "cli",
+        "cloudtrail",
+        "cmk",
+        "ebs",
+        "iam",
+        "kms",
+        "rds",
+        "sdk"
+    ],
+    "Lambda 1 1d1e8a1b4dd7806f8ed2dbcd330d4ba7.md": [
+        "alb",
+        "api",
+        "cloudwatch",
+        "cloudwatch logs",
+        "codedeploy",
+        "iot",
+        "javascript",
+        "lambda",
+        "ram",
+        "simple queue service",
+        "sns",
+        "sqs"
+    ],
+    "Lambda 2 1d1e8a1b4dd7800ea62bd71c7c6e5daf.md": [
+        "api",
+        "cli",
+        "cloudwatch logs",
+        "eventbridge",
+        "lambda",
+        "nat",
+        "rds",
+        "sdk",
+        "sns",
+        "sqs",
+        "vpc",
+        "vpc endpoint"
+    ],
+    "Lex & Connect 1dde8a1b4dd780229f78d3765c89ce47.md": [
+        "alexa",
+        "crm"
+    ],
+    "Load Balancer 2 1d1e8a1b4dd780cb83dcebe18a75fcd9.md": [
+        "alb",
+        "availability zones",
+        "clb",
+        "ec2",
+        "nlb",
+        "tcp",
+        "udp"
+    ],
+    "Load Balancers 1d1e8a1b4dd780b1982ae14ed30099f2.md": [
+        "alb",
+        "auto scaling groups",
+        "clb",
+        "dns",
+        "ec2",
+        "ecs",
+        "https",
+        "ips",
+        "nlb",
+        "ssl",
+        "tcp",
+        "udp",
+        "vpc",
+        "websocket"
+    ],
+    "Local Zones 1d3e8a1b4dd780809fbce617918a5126.md": [
+        "availability zones",
+        "ec2",
+        "management console",
+        "miami",
+        "vpc"
+    ],
+    "Macie 1dee8a1b4dd780eb9e53d543311bb5b3.md": [
+        "eventbridge",
+        "personally identifiable information",
+        "pii",
+        "sns"
+    ],
+    "Managed Logs 1cfe8a1b4dd7800cbc1cd483a86cf2d4.md": [
+        "alb",
+        "api",
+        "clb",
+        "cloudfront",
+        "cloudwatch logs",
+        "dns",
+        "kinesis data",
+        "nlb",
+        "route"
+    ],
+    "MQ 1d6e8a1b4dd78046bb75d06e34656837.md": [
+        "mqtt",
+        "sns",
+        "sqs"
+    ],
+    "Network Firewall 1dce8a1b4dd7807ebff8ee08b4e8586a.md": [
+        "cloudwatch logs",
+        "direct connect",
+        "ips",
+        "kinesis data",
+        "network firewall",
+        "smb",
+        "vpc"
+    ],
+    "Object lambda 1cee8a1b4dd7806cb04fc540d251177f.md": [
+        "personally identifiable information",
+        "pii",
+        "s3 access points"
+    ],
+    "OpenSearch 1d5e8a1b4dd7801ca039d06ab7f45330.md": [
+        "cloudwatch logs",
+        "elasticsearch service",
+        "kinesis data",
+        "kinesis data firehose",
+        "kinesis data stream",
+        "kinesis data streams",
+        "opensearch",
+        "opensearch service"
+    ],
+    "Organizations 1c9e8a1b4dd780a4ab09c21219ca95e9.md": [
+        "iam"
+    ],
+    "Other 1dde8a1b4dd7808eb908c19c91802d92.md": [
+        "alexa",
+        "iot"
+    ],
+    "Outpost 1d3e8a1b4dd78096b03bd6942c81e8be.md": [
+        "cli",
+        "ec2",
+        "kubernetes",
+        "s3 access points",
+        "sse",
+        "vpc"
+    ],
+    "Parameter store 1cbe8a1b4dd78086880de7b8034923c2.md": [
+        "ami",
+        "eventbridge",
+        "iam",
+        "kms",
+        "sdk",
+        "ttl"
+    ],
+    "Personalize 1dde8a1b4dd780bd90ebda7a6c0c2630.md": [
+        "api"
+    ],
+    "Pinpoint 1dee8a1b4dd780618d54f36acf36dc60.md": [
+        "cloudwatch logs",
+        "kinesis data firehose",
+        "sms",
+        "sns"
+    ],
+    "PrivateLink 1dce8a1b4dd780dea88be4f4a5104c27.md": [
+        "availability zones",
+        "direct connect",
+        "eni",
+        "nlb",
+        "vpc"
+    ],
+    "QuickSight 1d8e8a1b4dd78098affbd1742a08cebf.md": [
+        "athena",
+        "iam",
+        "quicksight",
+        "rds",
+        "redshift"
+    ],
+    "RDS 1d5e8a1b4dd780b286ebc1206a34aa4a.md": [
+        "cloudwatch",
+        "dns",
+        "ebs",
+        "ec2",
+        "iam",
+        "rds",
+        "route",
+        "sns",
+        "sql server",
+        "vpc"
+    ],
+    "Redshift 1d8e8a1b4dd78066b69dd83ad63f5479.md": [
+        "athena",
+        "database migration service",
+        "kinesis",
+        "kinesis data",
+        "kms",
+        "nosql",
+        "quicksight",
+        "redshift",
+        "sql",
+        "vpc"
+    ],
+    "Redundant Connections 1dce8a1b4dd780ad9027d9562b9d87b6.md": [
+        "asn",
+        "direct connect",
+        "regions",
+        "vgw"
+    ],
+    "Route 53 Hosted Zones 1d3e8a1b4dd78027a874d4761c32ff5e.md": [
+        "alb",
+        "dns",
+        "rds",
+        "vpc"
+    ],
+    "Route53 1d2e8a1b4dd78088b5fde6bbec3dfb18.md": [
+        "cname",
+        "dns",
+        "ttl",
+        "vpc"
+    ],
+    "Running Jobs 1d8e8a1b4dd780f7b11cd05129f25c8f.md": [
+        "api",
+        "ec2",
+        "eventbridge"
+    ],
+    "S2S VPN 1dce8a1b4dd780b183e5c2b53d353acd.md": [
+        "asn",
+        "customer gateways",
+        "direct connect",
+        "ipsec",
+        "los angeles",
+        "miami",
+        "nat",
+        "vgw",
+        "vpc"
+    ],
+    "S3 1d4e8a1b4dd780fca6ade1744c9332ad.md": [
+        "api",
+        "cli",
+        "cross-region replication",
+        "crr",
+        "ec2",
+        "efs",
+        "eventbridge",
+        "sqs",
+        "step functions"
+    ],
+    "S3 Cost Savings 1d9e8a1b4dd78083b9e7ef124f1ce860.md": [
+        "iam"
+    ],
+    "S3 Leans 1d4e8a1b4dd780ce9907fe8e7777c7af.md": [
+        "crr",
+        "csv",
+        "organization",
+        "sse"
+    ],
+    "S3 Security 1cee8a1b4dd780b9be5ac5976a970c3e.md": [
+        "cli",
+        "cloudfront",
+        "cloudtrail",
+        "elastic ip",
+        "eventbridge",
+        "iam",
+        "kms",
+        "mfa",
+        "sns",
+        "sqs",
+        "sse",
+        "vpc"
+    ],
+    "SageMaker 1dde8a1b4dd780eeb736fc03109b344f.md": [
+        "sagemaker"
+    ],
+    "SAM 1d9e8a1b4dd780a8b7c5c3f195b7515b.md": [
+        "cloudformation",
+        "codecommit",
+        "codedeploy",
+        "codepipeline",
+        "sam"
+    ],
+    "Secret Manager 1cbe8a1b4dd78037b058cc8d51ecc796.md": [
+        "api",
+        "cloudformation",
+        "ecs",
+        "eventbridge",
+        "kms",
+        "lambda",
+        "ram",
+        "rds",
+        "redshift"
+    ],
+    "Security 1cae8a1b4dd780b189a9d86b7cfccb68.md": [
+        "cloudtrail"
+    ],
+    "Security Hub 1cfe8a1b4dd78006a1e5c0fd2c51fe45.md": [
+        "eventbridge",
+        "management console"
+    ],
+    "Service Catalog 1d9e8a1b4dd780c38bd6d997b8a5f426.md": [
+        "cloudformation",
+        "ec2",
+        "efs",
+        "iam",
+        "rds"
+    ],
+    "Service Quotas 1d9e8a1b4dd7807380b2f3bd211ea156.md": [
+        "api",
+        "cloudwatch",
+        "sns"
+    ],
+    "SES 1dee8a1b4dd7803d9f63fbbe890ba089.md": [
+        "api",
+        "athena",
+        "ips",
+        "kinesis data",
+        "kinesis data analytics",
+        "kinesis data firehose",
+        "sns"
+    ],
+    "Snowball 1dae8a1b4dd7802c81d3f26928fa634f.md": [
+        "management console"
+    ],
+    "SNS 1d6e8a1b4dd780bbbdace9671c31cd37.md": [
+        "api",
+        "database migration service",
+        "kinesis data",
+        "redshift",
+        "sms",
+        "sns",
+        "sqs"
+    ],
+    "SNS FanOut 1d6e8a1b4dd780658210e2291fd8e5fe.md": [
+        "kinesis data firehose",
+        "lambda",
+        "sns",
+        "sqs"
+    ],
+    "Spot Fleets 1d0e8a1b4dd7806dbfcdcedaf6898e49.md": [
+        "spot instances"
+    ],
+    "SQS 1d6e8a1b4dd780c7a4c7cb3bdcef25f5.md": [
+        "auto scaling groups",
+        "simple queue service",
+        "sns",
+        "sqs"
+    ],
+    "SSL TLS encyrption 1cbe8a1b4dd780ef8147f65039d7a059.md": [
+        "alb",
+        "clb",
+        "cloudfront",
+        "dns",
+        "kms",
+        "nlb",
+        "route",
+        "ssl"
+    ],
+    "Step Functions 1d6e8a1b4dd780a58e20c225f3b71958.md": [
+        "cli",
+        "cloudwatch logs",
+        "codepipeline",
+        "ec2",
+        "fargate",
+        "lambda",
+        "sagemaker",
+        "sdk",
+        "sns",
+        "sqs",
+        "step functions"
+    ],
+    "Storage Class Analysis 1d4e8a1b4dd780588630e0a9dd55930d.md": [
+        "quicksight"
+    ],
+    "Storage Gateway 1dae8a1b4dd78007970cfcfa8d6eb47e.md": [
+        "cpu",
+        "ebs",
+        "glacier",
+        "iam",
+        "nfs",
+        "smb",
+        "vmware"
+    ],
+    "Storage Gateway 2 1dae8a1b4dd7800cba7ff1cbf5b596a1.md": [
+        "api",
+        "cross-region replication",
+        "crr",
+        "ec2",
+        "hadoop",
+        "nfs",
+        "redshift",
+        "sql",
+        "vpc"
+    ],
+    "STS 1c8e8a1b4dd7800da034d77f6d5018b0.md": [
+        "api",
+        "cloudtrail",
+        "iam",
+        "mfa",
+        "sts"
+    ],
+    "System Manager 1d9e8a1b4dd780b5a269e40f09825754.md": [
+        "cli",
+        "cloudformation",
+        "cloudtrail",
+        "cloudwatch",
+        "cloudwatch logs",
+        "ec2",
+        "eventbridge",
+        "iam",
+        "linux",
+        "sdk",
+        "ssh",
+        "systems"
+    ],
+    "Timstream 1d8e8a1b4dd7809d984cfe4dcce007ea.md": [
+        "iot",
+        "kinesis",
+        "lambda",
+        "quicksight",
+        "sagemaker",
+        "sql"
+    ],
+    "Transcribe 1dde8a1b4dd780f6bad8f517166f00e1.md": [
+        "personally identifiable information",
+        "pii"
+    ],
+    "Transfer Family 1d4e8a1b4dd7802280b5f9a8009514f4.md": [
+        "crm",
+        "direct connect",
+        "dns",
+        "efs",
+        "elastic ip",
+        "ips",
+        "microsoft active directory",
+        "ssl",
+        "vpc"
+    ],
+    "Transit Gateway 1dbe8a1b4dd7803c8de6ea12d2deb647.md": [
+        "customer gateways",
+        "direct connect",
+        "efs",
+        "eni",
+        "nat gateways",
+        "organization",
+        "ram",
+        "regions",
+        "vpc"
+    ],
+    "Trusted Advisor 1d9e8a1b4dd78024ab17f33970570499.md": [
+        "cloudwatch",
+        "eventbridge"
+    ],
+    "VPC 1dbe8a1b4dd78048b2b5d8961fefa0b9.md": [
+        "vpc"
+    ],
+    "VPC Endpoint Policy 1dbe8a1b4dd7800bb2f7d1589b1ed238.md": [
+        "dns",
+        "ec2",
+        "elastic ip",
+        "iam",
+        "putobject",
+        "sqs",
+        "vpc",
+        "vpc endpoint"
+    ],
+    "VPC Endpoints 1dbe8a1b4dd780e6aa02ffa95f6e5581.md": [
+        "athena",
+        "cloudwatch",
+        "direct connect",
+        "dns",
+        "eni",
+        "kms",
+        "nat",
+        "sns",
+        "systems",
+        "vpc"
+    ],
+    "VPC Logs 1dce8a1b4dd7804b9547e720be84e3f4.md": [
+        "athena",
+        "cloudwatch logs",
+        "elastic network interface",
+        "elasticache",
+        "elasticsearch service",
+        "elb",
+        "eni",
+        "ips",
+        "kinesis data",
+        "nat gateways",
+        "quicksight",
+        "rds",
+        "redshift",
+        "sns",
+        "sql",
+        "ssh",
+        "vpc",
+        "workspaces"
+    ],
+    "VPC Peering 1dbe8a1b4dd7804c838bcc9d75d3da87.md": [
+        "nat gateways",
+        "vpc"
+    ],
+    "WaveLength 1d3e8a1b4dd780259cd5dd11e440208c.md": [
+        "ebs",
+        "ec2",
+        "rds",
+        "vpc"
+    ],
+    "Workspaces 1dee8a1b4dd78074b31acd2ef66231f3.md": [
+        "microsoft",
+        "nat",
+        "vdi",
+        "workspaces"
+    ]
+}
